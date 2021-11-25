@@ -15,8 +15,13 @@ function sumCalcuateSumOfangles(angles1,angles2,angles3){
 function isTriangle(){
     // convert to data string to number
     const anglesOfSum=sumCalcuateSumOfangles(Number(trianglesInput[0].value),Number(trianglesInput[1].value),Number(trianglesInput[2].value))
-    // const tapyCastingStringToNumber=Number(trianglesInput[0].value,trianglesInput[1].value,trianglesInput[2].value)
-    console.log(anglesOfSum)
+    if(anglesOfSum===180){ //put the condition and check its trianlge or not
+        // console.log('Great!,The angles from a trianlge')
+        trianglesOutput.innerText='Great!,The angles from a trianlge'
+    }else{
+        // console.log("Oops! The anlges don't from a trianle")
+        trianglesOutput.innerText="Oops! The anlges don't from a trianle"
+    }
 
     
 }
