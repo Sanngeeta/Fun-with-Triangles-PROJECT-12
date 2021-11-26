@@ -1,7 +1,7 @@
 const sideInputs=document.querySelectorAll(".side-input")
 const hypotenuseButton=document.querySelector("#Calculate-btn")
 const showOutput=document.querySelector("#output")
-const showError=document.querySelector(".error")
+// const showError=document.querySelector(".error")
 
 
 function calculateSumOfSquares(a,b){
@@ -16,9 +16,18 @@ function calculateHypotenuse(){
    if (lengthOfNumber){
     showOutput.innerText=`Length of Hypotenuse: ${lengthOfNumber}`
 
-   }else if(hypotenuseButton.value===""){
-        showError.innerText="Opps! It's not a number!"
+   }else{
+        showOutput.innerText="Opps! It's not a number!"
    }
 }
 
 hypotenuseButton.addEventListener("click",calculateHypotenuse)
+
+
+
+
+var errorHendler = (error) => {
+    console.log("error occured", error)
+    alert('something wrong server: try again after some time')
+
+}
