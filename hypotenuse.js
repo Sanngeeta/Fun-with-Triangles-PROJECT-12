@@ -24,10 +24,3 @@ function calculateHypotenuse(){
 hypotenuseButton.addEventListener("click",calculateHypotenuse)
 
 
-
-
-var errorHendler = (error) => {
-    console.log("error occured", error)
-    alert('something wrong server: try again after some time')
-
-}

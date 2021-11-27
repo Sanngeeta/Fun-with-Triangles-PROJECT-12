@@ -1,6 +1,6 @@
 const trianglesInput=document.querySelectorAll(".angles-input")
 const trianglesButton=document.querySelector("#angles-btn")
-const trianglesOutput=document.querySelector("#angles-btn")
+const trianglesOutput=document.querySelector("#output")
 // console.log(trianglesInput)
 // console.log(trianglesButton)
 // console.log(trianglesOutput)
